@@ -14,7 +14,7 @@ def upload_data(path):
     return data
 # read the file
 st.markdown("<h3 style = 'text-align: center;'>HVAC Chiller Performance </h3>", unsafe_allow_html=True)
-df = upload_data("C:/Users/riaz sons/Documents/chiller_project/Professional_ReportOrDashboard_template/HVAC_ML/HVAC Energy Data.csv")
+df = upload_data("HVAC Energy Data.csv")
 # change date type
 df['Local Time (Timezone : GMT+8h)'] = pd.to_datetime(df['Local Time (Timezone : GMT+8h)'])
 col_left, col_center, col_right = st.columns([1,1,1], gap='small')
